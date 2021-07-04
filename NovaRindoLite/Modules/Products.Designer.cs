@@ -30,10 +30,10 @@ namespace NovaRindoLite.Modules
         private void InitializeComponent()
         {
             this.panelHomeProducts = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panelHomeProducts.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -47,26 +47,8 @@ namespace NovaRindoLite.Modules
             this.panelHomeProducts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHomeProducts.Location = new System.Drawing.Point(0, 0);
             this.panelHomeProducts.Name = "panelHomeProducts";
-            this.panelHomeProducts.Size = new System.Drawing.Size(1782, 1067);
+            this.panelHomeProducts.Size = new System.Drawing.Size(2135, 1067);
             this.panelHomeProducts.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 983);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1782, 84);
-            this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1287, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(495, 983);
-            this.panel2.TabIndex = 1;
             // 
             // gridControl1
             // 
@@ -74,7 +56,7 @@ namespace NovaRindoLite.Modules
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1287, 983);
+            this.gridControl1.Size = new System.Drawing.Size(1714, 983);
             this.gridControl1.TabIndex = 2;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -84,11 +66,29 @@ namespace NovaRindoLite.Modules
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(1714, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(421, 983);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 983);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2135, 84);
+            this.panel1.TabIndex = 0;
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1782, 1067);
+            this.ClientSize = new System.Drawing.Size(2135, 1067);
             this.Controls.Add(this.panelHomeProducts);
             this.Name = "Products";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
