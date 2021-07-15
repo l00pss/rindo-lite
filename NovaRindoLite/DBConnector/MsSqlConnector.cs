@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NovaRindoLite.DBConnector
 {
-    class MsSqlConnector
+    class MsSqlConnector:IConnector
     {
     }
 }

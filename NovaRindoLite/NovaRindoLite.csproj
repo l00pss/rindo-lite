@@ -40,6 +40,7 @@
     <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -67,22 +68,40 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Home.cs">
+    <Compile Include="Modules\Base\Expenses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Home.Designer.cs">
+    <Compile Include="Modules\Base\Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Base\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Base\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Products.cs">
+    <Compile Include="Modules\Base\Invoices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Products.Designer.cs">
+    <Compile Include="Modules\Base\Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Base\Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Base\Products.Designer.cs">
       <DependentUpon>Products.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Stock.cs">
+    <Compile Include="Modules\Base\Report.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Stock.Designer.cs">
+    <Compile Include="Modules\Base\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Base\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Base\Stock.Designer.cs">
       <DependentUpon>Stock.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -90,13 +109,22 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Home.resx">
+    <EmbeddedResource Include="Modules\Base\Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Base\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Products.resx">
+    <EmbeddedResource Include="Modules\Base\Invoices.resx">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Base\Products.resx">
       <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Stock.resx">
+    <EmbeddedResource Include="Modules\Base\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Base\Stock.resx">
       <DependentUpon>Stock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />

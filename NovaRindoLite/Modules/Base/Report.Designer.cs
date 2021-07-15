@@ -1,7 +1,7 @@
 ﻿
-namespace NovaRindoLite.Modules
+namespace NovaRindoLite.Modules.Base
 {
-    partial class Stock
+    partial class Report
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,15 @@ namespace NovaRindoLite.Modules
         {
             this.SuspendLayout();
             // 
-            // Stock
+            // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1909, 875);
-            this.Name = "Stock";
+            this.ClientSize = new System.Drawing.Size(2329, 1141);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Report";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Stock";
+            this.Text = "Hesabat";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 

@@ -203,6 +203,7 @@ namespace NovaRindoLite
             this.btn_reports.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.1F);
             this.btn_reports.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_reports.Name = "btn_reports";
+            this.btn_reports.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_reports_ItemClick);
             // 
             // btn_personal
             // 
@@ -266,6 +267,7 @@ namespace NovaRindoLite
             this.btn_invoice.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.1F);
             this.btn_invoice.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_invoice.Name = "btn_invoice";
+            this.btn_invoice.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_invoice_ItemClick);
             // 
             // btn_help
             // 
@@ -293,6 +295,7 @@ namespace NovaRindoLite
             this.btn_stock.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.1F);
             this.btn_stock.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_stock.Name = "btn_stock";
+            this.btn_stock.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_stock_ItemClick);
             // 
             // btn_sale
             // 
@@ -458,6 +461,7 @@ namespace NovaRindoLite
             this.btn_products.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.1F);
             this.btn_products.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_products.Name = "btn_products";
+            this.btn_products.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_products_ItemClick);
             // 
             // btn_expenses
             // 
@@ -467,6 +471,7 @@ namespace NovaRindoLite
             this.btn_expenses.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.1F);
             this.btn_expenses.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_expenses.Name = "btn_expenses";
+            this.btn_expenses.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_expenses_ItemClick);
             // 
             // btn_safe
             // 
