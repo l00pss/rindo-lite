@@ -1,7 +1,7 @@
 ﻿
-namespace NovaRindoLite
+namespace NovaRindoLite.Modules
 {
-    partial class Form1
+    partial class gb
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,7 @@ namespace NovaRindoLite
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gb));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.btn_home = new DevExpress.XtraBars.BarButtonItem();
@@ -82,44 +81,14 @@ namespace NovaRindoLite
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage20 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage13 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
-            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage15 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage17 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage19 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage21 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage23 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage25 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage27 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -163,6 +132,7 @@ namespace NovaRindoLite
             this.btn_expenses,
             this.btn_safe});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.ribbonControl1.MaxItemId = 41;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -174,7 +144,7 @@ namespace NovaRindoLite
             this.ribbonPage24,
             this.ribbonPage26,
             this.ribbonPage20});
-            this.ribbonControl1.Size = new System.Drawing.Size(2701, 364);
+            this.ribbonControl1.Size = new System.Drawing.Size(2710, 364);
             this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Above;
             // 
             // barButtonItem1
@@ -193,7 +163,6 @@ namespace NovaRindoLite
             this.btn_home.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.1F);
             this.btn_home.ItemAppearance.Normal.Options.UseFont = true;
             this.btn_home.Name = "btn_home";
-            this.btn_home.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_home_ItemClick);
             // 
             // btn_reports
             // 
@@ -600,170 +569,47 @@ namespace NovaRindoLite
             // 
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             // 
-            // ribbonPageGroup3
+            // panel2
             // 
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "ribbonPageGroup3";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 1072);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
+            this.panel2.Size = new System.Drawing.Size(2710, 45);
+            this.panel2.TabIndex = 2;
             // 
-            // barButtonItem18
+            // button1
             // 
-            this.barButtonItem18.Caption = "Qaimələr";
-            this.barButtonItem18.Id = 18;
-            this.barButtonItem18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.Image")));
-            this.barButtonItem18.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem18.ImageOptions.LargeImage")));
-            this.barButtonItem18.Name = "barButtonItem18";
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(2456, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(249, 45);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Rindo Asistan";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // ribbonPage13
+            // pictureBox1
             // 
-            this.ribbonPage13.Name = "ribbonPage13";
-            this.ribbonPage13.Text = "ribbonPage13";
-            // 
-            // barButtonItem20
-            // 
-            this.barButtonItem20.Caption = "Banklar";
-            this.barButtonItem20.Id = 20;
-            this.barButtonItem20.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.Image")));
-            this.barButtonItem20.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.LargeImage")));
-            this.barButtonItem20.Name = "barButtonItem20";
-            // 
-            // ribbonPage2
-            // 
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Haqqında";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
-            // ribbonPage11
-            // 
-            this.ribbonPage11.Name = "ribbonPage11";
-            this.ribbonPage11.Text = "ribbonPage11";
-            // 
-            // ribbonPage9
-            // 
-            this.ribbonPage9.Name = "ribbonPage9";
-            this.ribbonPage9.Text = "ribbonPage9";
-            // 
-            // ribbonPage7
-            // 
-            this.ribbonPage7.Name = "ribbonPage7";
-            this.ribbonPage7.Text = "ribbonPage7";
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "ribbonPage5";
-            // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "ribbonPage3";
-            // 
-            // ribbonPage10
-            // 
-            this.ribbonPage10.Name = "ribbonPage10";
-            this.ribbonPage10.Text = "İstifadəçi Paneli";
-            // 
-            // ribbonPage6
-            // 
-            this.ribbonPage6.Name = "ribbonPage6";
-            this.ribbonPage6.Text = "Yeniləmələr";
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "Statistika";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            // 
-            // ribbonPage8
-            // 
-            this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5});
-            this.ribbonPage8.Name = "ribbonPage8";
-            this.ribbonPage8.Text = "Anbar Əməliyyatları";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Nəzarət Mərkəzi";
-            // 
-            // barButtonItem21
-            // 
-            this.barButtonItem21.Caption = "Mesaj Qutusu";
-            this.barButtonItem21.Id = 22;
-            this.barButtonItem21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.ImageOptions.Image")));
-            this.barButtonItem21.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.ImageOptions.LargeImage")));
-            this.barButtonItem21.Name = "barButtonItem21";
-            // 
-            // barCheckItem1
-            // 
-            this.barCheckItem1.Caption = "barCheckItem1";
-            this.barCheckItem1.Id = 21;
-            this.barCheckItem1.Name = "barCheckItem1";
-            // 
-            // barButtonItem19
-            // 
-            this.barButtonItem19.Caption = "Rəhbər";
-            this.barButtonItem19.Id = 19;
-            this.barButtonItem19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.Image")));
-            this.barButtonItem19.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.LargeImage")));
-            this.barButtonItem19.Name = "barButtonItem19";
-            // 
-            // ribbonPage15
-            // 
-            this.ribbonPage15.Name = "ribbonPage15";
-            this.ribbonPage15.Text = "ribbonPage15";
-            // 
-            // ribbonPage17
-            // 
-            this.ribbonPage17.Name = "ribbonPage17";
-            this.ribbonPage17.Text = "ribbonPage17";
-            // 
-            // ribbonPage19
-            // 
-            this.ribbonPage19.Name = "ribbonPage19";
-            this.ribbonPage19.Text = "ribbonPage19";
-            // 
-            // ribbonPage21
-            // 
-            this.ribbonPage21.Name = "ribbonPage21";
-            this.ribbonPage21.Text = "ribbonPage21";
-            // 
-            // ribbonPage23
-            // 
-            this.ribbonPage23.Name = "ribbonPage23";
-            this.ribbonPage23.Text = "ribbonPage23";
-            // 
-            // ribbonPage25
-            // 
-            this.ribbonPage25.Name = "ribbonPage25";
-            this.ribbonPage25.Text = "ribbonPage25";
-            // 
-            // ribbonPage27
-            // 
-            this.ribbonPage27.Name = "ribbonPage27";
-            this.ribbonPage27.Text = "ribbonPage27";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(48, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hazır...";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -776,115 +622,37 @@ namespace NovaRindoLite
             this.label2.TabIndex = 1;
             this.label2.Text = "Xoş Gəldiniz USER , oxunmamış bildiriş sayı 0";
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(10, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(30, 3, 3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 47);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(48, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hazır...";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(2447, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(249, 47);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Rindo Asistan";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 1075);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(10, 0, 5, 0);
-            this.panel2.Size = new System.Drawing.Size(2701, 47);
-            this.panel2.TabIndex = 0;
-            // 
-            // xtraTabbedMdiManager1
-            // 
-            this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // Form1
+            // gb
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2701, 1122);
+            this.ClientSize = new System.Drawing.Size(2710, 1117);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.ribbonControl1);
-            this.IsMdiContainer = true;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Rindo Lite";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "gb";
+            this.Text = "gb";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem18;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage13;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem20;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage11;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage9;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage7;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage10;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage6;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage8;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem21;
-        private DevExpress.XtraBars.BarCheckItem barCheckItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem19;
+
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage12;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage14;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage16;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage18;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage22;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage20;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage15;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage17;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage19;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage21;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage23;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem btn_home;
         private DevExpress.XtraBars.BarButtonItem btn_reports;
@@ -912,25 +680,33 @@ namespace NovaRindoLite
         private DevExpress.XtraBars.BarButtonItem barButtonItem27;
         private DevExpress.XtraBars.BarButtonItem barButtonItem28;
         private DevExpress.XtraBars.BarButtonItem barButtonItem29;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage24;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage25;
         private DevExpress.XtraBars.BarButtonItem btn_exits;
         private DevExpress.XtraBars.BarButtonItem btn_exitnotes;
         private DevExpress.XtraBars.BarButtonItem barButtonItem32;
         private DevExpress.XtraBars.BarButtonItem barButtonItem33;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage26;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage27;
         private DevExpress.XtraBars.BarButtonItem btn_products;
         private DevExpress.XtraBars.BarButtonItem btn_expenses;
         private DevExpress.XtraBars.BarButtonItem btn_safe;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage12;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage16;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage14;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage18;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage22;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage24;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage26;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage20;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
-

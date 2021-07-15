@@ -82,6 +82,7 @@ namespace NovaRindoLite.Modules
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -109,6 +110,7 @@ namespace NovaRindoLite.Modules
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -269,9 +271,9 @@ namespace NovaRindoLite.Modules
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel9);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(2094, 0);
+            this.panel1.Location = new System.Drawing.Point(1953, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(646, 1143);
+            this.panel1.Size = new System.Drawing.Size(787, 1143);
             this.panel1.TabIndex = 17;
             // 
             // panel10
@@ -281,7 +283,7 @@ namespace NovaRindoLite.Modules
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(0, 64);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(646, 1079);
+            this.panel10.Size = new System.Drawing.Size(787, 1079);
             this.panel10.TabIndex = 1;
             // 
             // panel12
@@ -294,14 +296,14 @@ namespace NovaRindoLite.Modules
             this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel12.Location = new System.Drawing.Point(0, 160);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(646, 160);
+            this.panel12.Size = new System.Drawing.Size(787, 160);
             this.panel12.TabIndex = 0;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Location = new System.Drawing.Point(398, 13);
+            this.label22.Location = new System.Drawing.Point(537, 17);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(238, 32);
             this.label22.TabIndex = 1;
@@ -349,14 +351,14 @@ namespace NovaRindoLite.Modules
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel11.Location = new System.Drawing.Point(0, 0);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(646, 160);
+            this.panel11.Size = new System.Drawing.Size(787, 160);
             this.panel11.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(398, 13);
+            this.label3.Location = new System.Drawing.Point(537, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(238, 32);
             this.label3.TabIndex = 1;
@@ -396,24 +398,26 @@ namespace NovaRindoLite.Modules
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.LightGray;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(126)))), ((int)(((byte)(176)))));
+            this.panel9.Controls.Add(this.pictureBox1);
             this.panel9.Controls.Add(this.label25);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(646, 64);
+            this.panel9.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.panel9.Size = new System.Drawing.Size(787, 64);
             this.panel9.TabIndex = 0;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.1F);
-            this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(3, 14);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(70, 10);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(133, 47);
+            this.label25.Size = new System.Drawing.Size(118, 47);
             this.label25.TabIndex = 0;
-            this.label25.Text = "Lövhə";
+            this.label25.Text = "Divar";
             // 
             // label11
             // 
@@ -687,6 +691,17 @@ namespace NovaRindoLite.Modules
             this.panel4.Size = new System.Drawing.Size(550, 221);
             this.panel4.TabIndex = 15;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
@@ -701,7 +716,7 @@ namespace NovaRindoLite.Modules
             this.Controls.Add(this.panel4);
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Home";
+            this.Text = "Əsas Səifə";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -739,6 +754,7 @@ namespace NovaRindoLite.Modules
             this.panel7.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -797,5 +813,6 @@ namespace NovaRindoLite.Modules
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

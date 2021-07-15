@@ -12,6 +12,8 @@ namespace NovaRindoLite
 {
     public partial class Form1 : Form
     {
+        private Modules.Home homeForm;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +21,16 @@ namespace NovaRindoLite
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            homeForm = new Modules.Home();
+            homeForm.MdiParent = this;
+            homeForm.Show();
+        }
 
+        private void btn_home_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            homeForm = new Modules.Home();
+            homeForm.MdiParent = this;
+            homeForm.Show();
         }
     }
 }
