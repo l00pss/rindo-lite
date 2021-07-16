@@ -7,18 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace NovaRindoLite
 {
     public partial class Form1 : Form
     {
+        private DBConnector.IConnector connection;
+
+
         private Modules.Home homeForm;
         private Modules.Products productsForm;
         private Modules.Stock stockForm;
         private Modules.Base.Expenses expensesForm;
         private Modules.Base.Invoices invoicesForm;
         private Modules.Base.Report reportForm;
-
 
 
         public Form1()
@@ -31,6 +35,9 @@ namespace NovaRindoLite
             homeForm = new Modules.Home();
             homeForm.MdiParent = this;
             homeForm.Show();
+
+            //connection = new DBConnector.MsSqlConnector();
+
         }
 
         private void btn_home_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
