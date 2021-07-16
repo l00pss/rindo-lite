@@ -55,6 +55,29 @@ namespace NovaRindoLite.Modules
             dataServer.ListingData(dataTable, sqlDataAdapter, ListCommands.PRODUCT, gridControlProduct);
         }
 
-        
+        private void simpleButton10_Click(object sender, EventArgs e)
+        {
+            panelSetting.Visible = true;
+        }
+
+        private void panelSetting_Paint(object sender, PaintEventArgs e)
+        { 
+           if (lockID.Checked == true)
+            {
+                txt_ID.Enabled = false;
+            }
+        }
+
+        private void lockID_CheckedChanged(object sender, EventArgs e)
+        {
+            if (lockID.Checked == true)
+            {
+                txt_ID.Enabled = false;
+            }
+            else
+            {
+                txt_ID.Enabled = true;
+            }
+        }
     }
 }

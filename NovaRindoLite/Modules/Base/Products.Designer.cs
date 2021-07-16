@@ -34,7 +34,22 @@ namespace NovaRindoLite.Modules
             this.gridControlProduct = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelSetting = new System.Windows.Forms.Panel();
-            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
+            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lockID = new DevExpress.XtraEditors.CheckButton();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
@@ -56,16 +71,15 @@ namespace NovaRindoLite.Modules
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_ID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.simpleButton10 = new DevExpress.XtraEditors.SimpleButton();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.btn_update = new DevExpress.XtraEditors.SimpleButton();
             this.btn_deleteProduct = new DevExpress.XtraEditors.SimpleButton();
@@ -75,6 +89,10 @@ namespace NovaRindoLite.Modules
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panelSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).BeginInit();
@@ -82,8 +100,6 @@ namespace NovaRindoLite.Modules
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             this.SuspendLayout();
@@ -123,8 +139,20 @@ namespace NovaRindoLite.Modules
             // 
             // panelSetting
             // 
-            this.panelSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.panelSetting.Controls.Add(this.checkButton1);
+            this.panelSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panelSetting.Controls.Add(this.simpleButton6);
+            this.panelSetting.Controls.Add(this.simpleButton9);
+            this.panelSetting.Controls.Add(this.simpleButton5);
+            this.panelSetting.Controls.Add(this.simpleButton8);
+            this.panelSetting.Controls.Add(this.simpleButton4);
+            this.panelSetting.Controls.Add(this.simpleButton7);
+            this.panelSetting.Controls.Add(this.simpleButton3);
+            this.panelSetting.Controls.Add(this.simpleButton2);
+            this.panelSetting.Controls.Add(this.simpleButton1);
+            this.panelSetting.Controls.Add(this.pictureEdit1);
+            this.panelSetting.Controls.Add(this.richTextBox1);
+            this.panelSetting.Controls.Add(this.panel2);
+            this.panelSetting.Controls.Add(this.lockID);
             this.panelSetting.Controls.Add(this.checkEdit1);
             this.panelSetting.Controls.Add(this.maskedTextBox5);
             this.panelSetting.Controls.Add(this.maskedTextBox4);
@@ -146,30 +174,184 @@ namespace NovaRindoLite.Modules
             this.panelSetting.Controls.Add(this.label7);
             this.panelSetting.Controls.Add(this.label6);
             this.panelSetting.Controls.Add(this.label4);
+            this.panelSetting.Controls.Add(this.label14);
             this.panelSetting.Controls.Add(this.label13);
             this.panelSetting.Controls.Add(this.label5);
             this.panelSetting.Controls.Add(this.label3);
-            this.panelSetting.Controls.Add(this.textBox1);
+            this.panelSetting.Controls.Add(this.txt_ID);
             this.panelSetting.Controls.Add(this.label2);
             this.panelSetting.Controls.Add(this.pictureBox2);
-            this.panelSetting.Controls.Add(this.pictureBox3);
-            this.panelSetting.Controls.Add(this.pictureBox1);
-            this.panelSetting.Controls.Add(this.label1);
             this.panelSetting.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelSetting.Location = new System.Drawing.Point(1370, 0);
             this.panelSetting.Name = "panelSetting";
             this.panelSetting.Size = new System.Drawing.Size(1074, 1101);
             this.panelSetting.TabIndex = 1;
+            this.panelSetting.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSetting_Paint);
             // 
-            // checkButton1
+            // simpleButton6
             // 
-            this.checkButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("checkButton1.ImageOptions.SvgImage")));
-            this.checkButton1.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
-            this.checkButton1.Location = new System.Drawing.Point(843, 174);
-            this.checkButton1.Name = "checkButton1";
-            this.checkButton1.Size = new System.Drawing.Size(183, 57);
-            this.checkButton1.TabIndex = 8;
-            this.checkButton1.Text = "Lock";
+            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 10.1F);
+            this.simpleButton6.Appearance.Options.UseFont = true;
+            this.simpleButton6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
+            this.simpleButton6.ImageOptions.SvgImageSize = new System.Drawing.Size(25, 25);
+            this.simpleButton6.Location = new System.Drawing.Point(29, 903);
+            this.simpleButton6.Name = "simpleButton6";
+            this.simpleButton6.Size = new System.Drawing.Size(280, 135);
+            this.simpleButton6.TabIndex = 4;
+            this.simpleButton6.Text = "Əlavə Et";
+            // 
+            // simpleButton9
+            // 
+            this.simpleButton9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
+            this.simpleButton9.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton9.Location = new System.Drawing.Point(315, 979);
+            this.simpleButton9.Name = "simpleButton9";
+            this.simpleButton9.Size = new System.Drawing.Size(233, 59);
+            this.simpleButton9.TabIndex = 4;
+            this.simpleButton9.Text = "Ətraflı";
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
+            this.simpleButton5.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton5.Location = new System.Drawing.Point(315, 903);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(233, 59);
+            this.simpleButton5.TabIndex = 4;
+            this.simpleButton5.Text = "Yenilə";
+            // 
+            // simpleButton8
+            // 
+            this.simpleButton8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton8.ImageOptions.SvgImage")));
+            this.simpleButton8.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton8.Location = new System.Drawing.Point(554, 979);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(233, 59);
+            this.simpleButton8.TabIndex = 4;
+            this.simpleButton8.Text = "Hərəkətlər";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton4.ImageOptions.SvgImage")));
+            this.simpleButton4.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton4.Location = new System.Drawing.Point(554, 903);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(233, 59);
+            this.simpleButton4.TabIndex = 4;
+            this.simpleButton4.Text = "Təmizlə";
+            // 
+            // simpleButton7
+            // 
+            this.simpleButton7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
+            this.simpleButton7.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton7.Location = new System.Drawing.Point(793, 979);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(233, 59);
+            this.simpleButton7.TabIndex = 4;
+            this.simpleButton7.Text = "Nəzarət";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.simpleButton3.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton3.Location = new System.Drawing.Point(793, 903);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(233, 59);
+            this.simpleButton3.TabIndex = 4;
+            this.simpleButton3.Text = "Axtar";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.simpleButton2.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton2.Location = new System.Drawing.Point(866, 702);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(160, 59);
+            this.simpleButton2.TabIndex = 4;
+            this.simpleButton2.Text = "Əlavə Et";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.simpleButton1.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton1.Location = new System.Drawing.Point(665, 702);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(160, 59);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Text = "Sil";
+            // 
+            // pictureEdit1
+            // 
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(665, 426);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Properties.ZoomPercent = 50D;
+            this.pictureEdit1.Size = new System.Drawing.Size(361, 257);
+            this.pictureEdit1.TabIndex = 3;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(227, 779);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(799, 105);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.Text = "";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1074, 92);
+            this.panel2.TabIndex = 9;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(989, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(73, 65);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.1F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(103, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(383, 47);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Məhsul Sazlamaları";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(73, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lockID
+            // 
+            this.lockID.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("lockID.ImageOptions.SvgImage")));
+            this.lockID.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.lockID.Location = new System.Drawing.Point(843, 174);
+            this.lockID.Name = "lockID";
+            this.lockID.Size = new System.Drawing.Size(183, 57);
+            this.lockID.TabIndex = 8;
+            this.lockID.Text = "Lock";
+            this.lockID.CheckedChanged += new System.EventHandler(this.lockID_CheckedChanged);
             // 
             // checkEdit1
             // 
@@ -177,8 +359,8 @@ namespace NovaRindoLite.Modules
             this.checkEdit1.Name = "checkEdit1";
             this.checkEdit1.Properties.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.checkEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.checkEdit1.Properties.Caption = "Refferent";
-            this.checkEdit1.Size = new System.Drawing.Size(170, 47);
+            this.checkEdit1.Properties.Caption = "Sabit";
+            this.checkEdit1.Size = new System.Drawing.Size(185, 47);
             this.checkEdit1.TabIndex = 7;
             // 
             // maskedTextBox5
@@ -382,6 +564,17 @@ namespace NovaRindoLite.Modules
             this.label4.TabIndex = 2;
             this.label4.Text = "QUTU DAXILI SAY:";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.1F);
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(23, 779);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(184, 35);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "AÇIQLAMA:";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -415,13 +608,13 @@ namespace NovaRindoLite.Modules
             this.label3.TabIndex = 2;
             this.label3.Text = "AD:";
             // 
-            // textBox1
+            // txt_ID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.1F);
-            this.textBox1.Location = new System.Drawing.Point(730, 122);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 42);
-            this.textBox1.TabIndex = 3;
+            this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.1F);
+            this.txt_ID.Location = new System.Drawing.Point(730, 122);
+            this.txt_ID.Name = "txt_ID";
+            this.txt_ID.Size = new System.Drawing.Size(296, 42);
+            this.txt_ID.TabIndex = 3;
             // 
             // label2
             // 
@@ -444,41 +637,10 @@ namespace NovaRindoLite.Modules
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(989, 27);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(73, 65);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(73, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.1F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(103, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Məhsul Sazlamaları";
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.panel1.Controls.Add(this.simpleButton10);
             this.panel1.Controls.Add(this.searchControl1);
             this.panel1.Controls.Add(this.btn_update);
             this.panel1.Controls.Add(this.btn_deleteProduct);
@@ -490,6 +652,18 @@ namespace NovaRindoLite.Modules
             this.panel1.Padding = new System.Windows.Forms.Padding(5);
             this.panel1.Size = new System.Drawing.Size(2444, 72);
             this.panel1.TabIndex = 0;
+            // 
+            // simpleButton10
+            // 
+            this.simpleButton10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.simpleButton10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton10.ImageOptions.SvgImage")));
+            this.simpleButton10.ImageOptions.SvgImageSize = new System.Drawing.Size(16, 16);
+            this.simpleButton10.Location = new System.Drawing.Point(635, 5);
+            this.simpleButton10.Name = "simpleButton10";
+            this.simpleButton10.Size = new System.Drawing.Size(210, 62);
+            this.simpleButton10.TabIndex = 4;
+            this.simpleButton10.Text = "Sazlama";
+            this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
             // 
             // searchControl1
             // 
@@ -569,6 +743,11 @@ namespace NovaRindoLite.Modules
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panelSetting.ResumeLayout(false);
             this.panelSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit4.Properties)).EndInit();
@@ -576,8 +755,6 @@ namespace NovaRindoLite.Modules
             ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -598,7 +775,7 @@ namespace NovaRindoLite.Modules
         private DevExpress.XtraEditors.SimpleButton btn_deleteProduct;
         private DevExpress.XtraEditors.SimpleButton btn_updateProduct;
         private DevExpress.XtraEditors.SimpleButton btn_addProduct;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private DevExpress.XtraEditors.SearchControl searchControl1;
@@ -624,8 +801,22 @@ namespace NovaRindoLite.Modules
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.CheckEdit checkEdit1;
-        private DevExpress.XtraEditors.CheckButton checkButton1;
+        private DevExpress.XtraEditors.CheckButton lockID;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Panel panel2;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private System.Windows.Forms.Label label14;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
     }
 }
