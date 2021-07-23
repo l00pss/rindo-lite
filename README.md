@@ -1,6 +1,5 @@
 # Nova-Rindo-Lite
-![bandicam 2021-07-23 15-35-48-134](https://user-images.githubusercontent.com/59668725/126776562-e2939755-f923-4756-a7ea-8ec9889d678b.jpg)
-
-![bandicam 2021-07-23 15-36-02-214](https://user-images.githubusercontent.com/59668725/126776572-c2afc1b9-ac17-4846-9e2b-ac09fb6278eb.jpg)
+![1](https://user-images.githubusercontent.com/59668725/126776707-bf7f6a1e-2fc5-4bdb-acf9-4fd96500c2c5.jpg)
+![2](https://user-images.githubusercontent.com/59668725/126776716-b9085109-25de-4c82-bc28-c1a134813f24.jpg)
 
 Access the executive keynote, expert sessions across 8 industry and line-of-business sessions, and customer successes. Get the tips, tools, and innovations to start your digital transformation. 
