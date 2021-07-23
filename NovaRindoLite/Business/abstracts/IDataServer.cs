@@ -13,6 +13,6 @@ namespace NovaRindoLite.Business.abstracts
 {
     public interface IDataServer
     {
-        void ListingData(DataTable dataTable, SqlDataAdapter sqlDataAdapter, string commands, GridControl gridControl);
+        void ListingData(DataTable dataTable, SqlDataAdapter sqlDataAdapter, String commands, GridControl gridControl);
     }
 }

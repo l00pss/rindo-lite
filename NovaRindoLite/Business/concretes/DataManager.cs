@@ -15,9 +15,10 @@ namespace NovaRindoLite.Business.concretes
     {
 
         private DBConnector.IConnector connector;
-        void IDataServer.ListingData(DataTable dataTable, SqlDataAdapter sqlDataAdapter, string commands, GridControl gridControl)
+
+        
+        void IDataServer.ListingData(DataTable dataTable, SqlDataAdapter sqlDataAdapter, String  commands, GridControl gridControl)
         {
-            
             connector = new DBConnector.MsSqlConnector();
             dataTable = new DataTable();
             sqlDataAdapter = new SqlDataAdapter(commands, connector.GetConnection());

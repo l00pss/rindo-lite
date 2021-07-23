@@ -12,6 +12,9 @@ using System.Data.Sql;
 using NovaRindoLite.Utilities.SqlCommands;
 using NovaRindoLite.Business.abstracts;
 using NovaRindoLite.Business.concretes;
+using NovaRindoLite.Utilities.SqlCommands;
+using NovaRindoLite.Utilities.SqlCommands.abstracts;
+using NovaRindoLite.Utilities.SqlCommands.concretes;
 
 namespace NovaRindoLite.Modules
 {
@@ -21,6 +24,7 @@ namespace NovaRindoLite.Modules
         private DataTable dataTable;
         private SqlDataAdapter sqlDataAdapter;
         private IDataServer dataServer;
+        private ICommands commands;
 
 
         public Products()
@@ -30,8 +34,10 @@ namespace NovaRindoLite.Modules
 
         private void Products_Load(object sender, EventArgs e)
         {
+            commands = new Utilities.SqlCommands.concretes.Products();
+            
             dataServer = new DataManager();
-            dataServer.ListingData(dataTable,sqlDataAdapter,ListCommands.PRODUCT,gridControlProduct);
+            dataServer.ListingData(dataTable,sqlDataAdapter,commands.,gridControlProduct);
             panelSetting.Visible = false;
         }
 
@@ -51,8 +57,9 @@ namespace NovaRindoLite.Modules
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
+            aProduct = new Utilities.SqlCommands.concretes.Products();
             dataServer = new DataManager();
-            dataServer.ListingData(dataTable, sqlDataAdapter, ListCommands.PRODUCT, gridControlProduct);
+            dataServer.ListingData(dataTable, sqlDataAdapter, aProduct.PRODUCT, gridControlProduct);
         }
 
         private void simpleButton10_Click(object sender, EventArgs e)
@@ -78,6 +85,11 @@ namespace NovaRindoLite.Modules
             {
                 txt_ID.Enabled = true;
             }
+        }
+
+        private void gridControlProduct_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

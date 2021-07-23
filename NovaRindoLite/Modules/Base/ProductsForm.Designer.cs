@@ -29,9 +29,13 @@ namespace NovaRindoLite.Modules
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             this.panelHomeProducts = new System.Windows.Forms.Panel();
+            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
             this.gridControlProduct = new DevExpress.XtraGrid.GridControl();
+            this.rindoSoftDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rindoSoftDataSet = new NovaRindoLite.RindoSoftDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panelSetting = new System.Windows.Forms.Panel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
@@ -86,7 +90,11 @@ namespace NovaRindoLite.Modules
             this.btn_updateProduct = new DevExpress.XtraEditors.SimpleButton();
             this.btn_addProduct = new DevExpress.XtraEditors.SimpleButton();
             this.panelHomeProducts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
+            this.gridSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rindoSoftDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rindoSoftDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panelSetting.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -106,7 +114,7 @@ namespace NovaRindoLite.Modules
             // 
             // panelHomeProducts
             // 
-            this.panelHomeProducts.Controls.Add(this.gridControlProduct);
+            this.panelHomeProducts.Controls.Add(this.gridSplitContainer1);
             this.panelHomeProducts.Controls.Add(this.panelSetting);
             this.panelHomeProducts.Controls.Add(this.panel1);
             this.panelHomeProducts.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -115,27 +123,47 @@ namespace NovaRindoLite.Modules
             this.panelHomeProducts.Size = new System.Drawing.Size(2444, 1173);
             this.panelHomeProducts.TabIndex = 0;
             // 
+            // gridSplitContainer1
+            // 
+            this.gridSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridSplitContainer1.Grid = this.gridControlProduct;
+            this.gridSplitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.gridSplitContainer1.Margin = new System.Windows.Forms.Padding(8);
+            this.gridSplitContainer1.Name = "gridSplitContainer1";
+            this.gridSplitContainer1.Panel1.Controls.Add(this.gridControlProduct);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1370, 1101);
+            this.gridSplitContainer1.TabIndex = 2;
+            // 
             // gridControlProduct
             // 
+            this.gridControlProduct.DataSource = this.rindoSoftDataSetBindingSource;
             this.gridControlProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControlProduct.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(8);
             this.gridControlProduct.Location = new System.Drawing.Point(0, 0);
             this.gridControlProduct.MainView = this.gridView1;
+            this.gridControlProduct.Margin = new System.Windows.Forms.Padding(8);
             this.gridControlProduct.Name = "gridControlProduct";
             this.gridControlProduct.Size = new System.Drawing.Size(1370, 1101);
             this.gridControlProduct.TabIndex = 2;
             this.gridControlProduct.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControlProduct.Click += new System.EventHandler(this.gridControlProduct_Click);
+            // 
+            // rindoSoftDataSetBindingSource
+            // 
+            this.rindoSoftDataSetBindingSource.DataSource = this.rindoSoftDataSet;
+            this.rindoSoftDataSetBindingSource.Position = 0;
+            // 
+            // rindoSoftDataSet
+            // 
+            this.rindoSoftDataSet.DataSetName = "RindoSoftDataSet";
+            this.rindoSoftDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 875;
             this.gridView1.GridControl = this.gridControlProduct;
             this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsPrint.EnableAppearanceEvenRow = true;
-            this.gridView1.OptionsPrint.EnableAppearanceOddRow = true;
-            this.gridView1.OptionsPrint.PrintDetails = true;
-            this.gridView1.OptionsPrint.PrintFilterInfo = true;
-            this.gridView1.OptionsPrint.PrintPreview = true;
-            this.gridView1.OptionsPrint.PrintSelectedRowsOnly = true;
             // 
             // panelSetting
             // 
@@ -739,7 +767,11 @@ namespace NovaRindoLite.Modules
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Products_Load);
             this.panelHomeProducts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
+            this.gridSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rindoSoftDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rindoSoftDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panelSetting.ResumeLayout(false);
             this.panelSetting.PerformLayout();
@@ -765,7 +797,6 @@ namespace NovaRindoLite.Modules
 
         private System.Windows.Forms.Panel panelHomeProducts;
         private DevExpress.XtraGrid.GridControl gridControlProduct;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.Panel panelSetting;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -818,5 +849,9 @@ namespace NovaRindoLite.Modules
         private DevExpress.XtraEditors.SimpleButton simpleButton8;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
         private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.BindingSource rindoSoftDataSetBindingSource;
+        private RindoSoftDataSet rindoSoftDataSet;
     }
 }

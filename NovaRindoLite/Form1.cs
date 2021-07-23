@@ -23,6 +23,7 @@ namespace NovaRindoLite
         private Modules.Base.Expenses expensesForm;
         private Modules.Base.Invoices invoicesForm;
         private Modules.Base.Report reportForm;
+        private Modules.Base.Settings settingsForm;
 
 
         public Form1()
@@ -98,6 +99,17 @@ namespace NovaRindoLite
                 reportForm.MdiParent = this;
                 reportForm.Show();
             }
+        }
+
+        private void btn_setting_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (settingsForm == null)
+            {
+                settingsForm = new Modules.Base.Settings();
+                settingsForm.MdiParent = this;
+                settingsForm.Show();
+            }
+
         }
     }
 }
